@@ -2,7 +2,7 @@ import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import AuthLayout from "./components/auth/layout";
 import AuthLogin from "./pages/auth/login";
 import AuthRegister from "./pages/auth/register";
-import AdminLayout from "./components/admin-view/layout";
+// import AdminLayout from "./components/admin-view/layout";
 import AdminDashboard from "./pages/admin-view/dashboard";
 import AdminProducts from "./pages/admin-view/products";
 import AdminOrders from "./pages/admin-view/orders";
@@ -95,7 +95,7 @@ function App() {
           path="/admin"
           element={
             <CheckAuth isAuthenticated={isAuthenticated} user={user}>
-              <AdminLayout />
+              {/* <AdminLayout /> */}
             </CheckAuth>
           }
         >
